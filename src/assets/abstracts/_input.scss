@@ -25,18 +25,15 @@ input {
 .email {
     
     @extend %input;
-    align-self: center;
-    justify-content: flex-end
+   
     
 }
 .password {
     
    @extend %input;
-    
+
 }
 .confirmPassword {
-    @extend %input;
-   
-    
+    @extend %input;  
 }
 

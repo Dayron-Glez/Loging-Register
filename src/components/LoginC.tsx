@@ -57,7 +57,7 @@ const LoginC = () => {
           <input
             value={values.password}
             onChange={handleChange}
-            className={errors.password && touched.password ? "error" : ""}
+            className={errors.password && touched.password ? "input-error" : ""}
             type="password"
             name="password"
             id="password"
@@ -76,7 +76,7 @@ const LoginC = () => {
             }
             type="password"
             name="confirmPassword"
-            id="password"
+            id="confirmPassword"
             placeholder="Confirm your password"
           />
         </div>
