@@ -1,0 +1,42 @@
+%input {
+margin-top: 1rem;
+height: 2rem;
+text-align: left;
+padding-bottom: 0;
+background: transparent;
+border: none;
+outline: none;
+display: flex;
+ align-content: center;
+flex-direction: row-reverse;
+border-bottom: 0.1rem solid #000000;
+
+}
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.name {
+   @extend %input;
+   
+}
+
+.email {
+    
+    @extend %input;
+    align-self: center;
+    justify-content: flex-end
+    
+}
+.password {
+    
+   @extend %input;
+    
+}
+.confirmPassword {
+    @extend %input;
+   
+    
+}
+

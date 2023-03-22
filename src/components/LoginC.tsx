@@ -57,7 +57,7 @@ const LoginC = () => {
           <input
             value={values.password}
             onChange={handleChange}
-            className={errors.password && touched.password ? "input-error" : ""}
+            className={errors.password && touched.password ? "error" : ""}
             type="password"
             name="password"
             id="password"

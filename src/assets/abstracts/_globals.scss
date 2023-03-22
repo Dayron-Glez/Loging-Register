@@ -1,0 +1,21 @@
+* { box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+   
+    
+    background-image: linear-gradient(
+      to right,
+      rgba(231, 0, 0, 0.138),
+      rgba(0, 17, 206, 0.138)
+     ),
+    url(/src/assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

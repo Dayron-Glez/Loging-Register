@@ -1,0 +1,20 @@
+.error {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 0rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0rem;
+}
+.caja {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 0.1rem;
+    height: 5.5rem;
+}

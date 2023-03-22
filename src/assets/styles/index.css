@@ -1,23 +1,9 @@
-body {
-  box-sizing: border-box;
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-  background-image: linear-gradient(to right, rgba(231, 0, 0, 0.138), rgba(0, 17, 206, 0.138)), url(/src/assets/img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.error {
-  font-size: 0.8rem;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  border: 0.1rem solid;
+button {
+  margin-top: 2rem;
+  width: 11rem;
   border-radius: 1rem;
-  border: none;
-  margin-top: 0rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  background: transparent;
+  border: 0.1rem solid;
 }
 
 .container {
@@ -37,7 +23,7 @@ body {
 }
 
 .form-container {
-  padding-bottom: 3rem;
+  background-color: red;
   border: 0.1px solid rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -53,75 +39,39 @@ body {
   box-shadow: 0rem 0rem 1rem 0rem black;
 }
 
-input {
-  margin-top: 1rem;
-  height: 2rem;
-  text-align: left;
-  padding-bottom: 0;
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-button {
-  margin-top: 2rem;
-  width: 11rem;
-  border-radius: 1rem;
-  background: transparent;
+.error {
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
   border: 0.1rem solid;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 0rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0rem;
 }
 
-.name {
+.caja {
   display: flex;
-  align-content: center;
-  flex-direction: row-reverse;
-  border-bottom: 0.1rem solid #000000;
-  transition: 0.5s;
-}
-.name ::-moz-placeholder {
-  color: rgb(57, 57, 57);
-}
-.name ::placeholder {
-  color: rgb(57, 57, 57);
+  flex-direction: column;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 0.1rem;
+  height: 5.5rem;
 }
 
-.email {
-  display: flex;
-  align-content: center;
-  flex-direction: row-reverse;
-  border-bottom: 0.1rem solid #000000;
-}
-.email ::-moz-placeholder {
-  color: rgb(57, 57, 57);
-}
-.email ::placeholder {
-  color: rgb(57, 57, 57);
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
-.password {
-  display: flex;
-  align-content: center;
-  flex-direction: row-reverse;
-  border-bottom: 0.1rem solid #000000;
-}
-.password ::-moz-placeholder {
-  color: rgb(57, 57, 57);
-}
-.password ::placeholder {
-  color: rgb(57, 57, 57);
-}
-
-.confirmPassword {
-  display: flex;
-  align-content: center;
-  flex-direction: row-reverse;
-  border-bottom: 0.1rem solid #000000;
-}
-.confirmPassword ::-moz-placeholder {
-  color: rgb(57, 57, 57);
-}
-.confirmPassword ::placeholder {
-  color: rgb(57, 57, 57);
+body {
+  background-image: linear-gradient(to right, rgba(231, 0, 0, 0.138), rgba(0, 17, 206, 0.138)), url(/src/assets/img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .lock {
@@ -145,11 +95,27 @@ button {
   margin-bottom: 0.2rem;
 }
 
-.caja {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  width: 100%;
+.confirmPassword, .password, .email, .name {
   margin-top: 1rem;
-  padding: 0;
+  height: 2rem;
+  text-align: left;
+  padding-bottom: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-content: center;
+  flex-direction: row-reverse;
+  border-bottom: 0.1rem solid #000000;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.email {
+  align-self: center;
+  justify-content: flex-end;
 }/*# sourceMappingURL=index.css.map */
