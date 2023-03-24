@@ -4,6 +4,8 @@ import Lock from "../assets/img/lock-closed-outline.svg";
 import Text from "../assets/img/document-text-outline.svg";
 import Email from "../assets/img/mail-outline.svg";
 const LoginC = () => {
+  //Acá se la jugaste a TS, nunca debes pasar como tipo el ¨any¨, deberias buscar y aplicarlo,
+  //pero como usaste la libreria esa, no sabria decirte de que tipo es...
   const onSubmit = (values: any, actions: any) => {
     actions.resetForm();
   };
@@ -35,7 +37,7 @@ const LoginC = () => {
             className={errors.name ? "input-error" : ""}
             type="text"
             name="name"
-            id="name"
+            id="name" //Estas usando de id el propio valor del campo, eso está mal hecho, debes autogenerarlo o la libreria que usaste te lo debe proporcionar
             placeholder="Enter your name"
           />
         </div>
@@ -48,7 +50,7 @@ const LoginC = () => {
             className={errors.email && touched.email ? "input-error" : ""}
             type="email"
             name="email"
-            id="email"
+            id="email"//Mismo problema con el id
             placeholder="Enter your email"
           />
         </div>
@@ -60,7 +62,7 @@ const LoginC = () => {
             className={errors.password && touched.password ? "input-error" : ""}
             type="password"
             name="password"
-            id="password"
+            id="password"//Mismo problema con el id
             placeholder="Enter your password"
           />
         </div>
@@ -76,7 +78,7 @@ const LoginC = () => {
             }
             type="password"
             name="confirmPassword"
-            id="confirmPassword"
+            id="confirmPassword"//Mismo problema con el id
             placeholder="Confirm your password"
           />
         </div>
