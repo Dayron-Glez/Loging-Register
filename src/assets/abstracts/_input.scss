@@ -17,23 +17,28 @@ input {
     border: none;
     outline: none;
 }
-.name {
-   @extend %input;
-   
-}
 
-.email {
-    
+.name, .email, .password, .confirmPassword {
     @extend %input;
+}
+
+// .name {
+//    @extend %input;
+   
+// }
+
+// .email {
+    
+//     @extend %input;
    
     
-}
-.password {
+// }
+// .password {
     
-   @extend %input;
+//    @extend %input;
 
-}
-.confirmPassword {
-    @extend %input;  
-}
+// }
+// .confirmPassword {
+//     @extend %input;  
+// }
 
