@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Mi Recomendacion, no importes la hoja de estilo de css, ya sass no se trabaja asi,
+    lo que debes hacer es importart el archivo index.scss (que por lo general se le pone styles, no index) 
+    desde el main.tsx, con eso es suficiente.
+  
+    import '../assets/styles/index.scss'
+  
+    Tampoco deberias mezclar la carpeta de assets con la de estilos, son dos cosas diferentes
+    lo puedes hacer a tu gusto y manera, pero a nivel de organizacion, si ya existe un estandar,
+    no trates de modificarlo, xq enredas a otros programadores cuando leen lo que haces
+  
+    Con respecto a los nombres de los componentes, trata de ser lo mas especifico posible (que lo fuiste)
+    pero sin darle el toque imaginativo no explicito (con esto me refiero a que significa la "C" al
+    final de los nombres de los componentes?)
+    
+  -->
+
+
     <link rel="stylesheet" href='./src/assets/styles/index.css'>
     <title>Vite + React + TS</title>
   </head>
