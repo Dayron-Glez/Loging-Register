@@ -1,4 +1,5 @@
-import React from "react";
+//Cuando usas TypeScript no olvides borrar las importaciones de React, no son necesarias
+// import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const HeaderC = () => {
