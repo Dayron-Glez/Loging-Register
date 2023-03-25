@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import HeaderC from "./HeaderC";
 
 const MainC = () => {

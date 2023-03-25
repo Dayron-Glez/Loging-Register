@@ -8,14 +8,24 @@
 
 body {
    
+    background: {
+        image: linear-gradient(
+            to right,
+            rgba(231, 0, 0, 0.138),
+            rgba(0, 17, 206, 0.138)
+           ),
+           url(/src/assets/img/fondo.jpg);
+        repeat: no-repeat;
+        size: cover;
+    }
     
-    background-image: linear-gradient(
-      to right,
-      rgba(231, 0, 0, 0.138),
-      rgba(0, 17, 206, 0.138)
-     ),
-    url(/src/assets/img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: linear-gradient(
+    //   to right,
+    //   rgba(231, 0, 0, 0.138),
+    //   rgba(0, 17, 206, 0.138)
+    //  ),
+    //  url(/src/assets/img/fondo.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     
 }
